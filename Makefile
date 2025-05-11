@@ -28,7 +28,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@cd Helicopter && make
 	@$(CC) $(CCFLAGS) $(OBJ) -Ilibft_ext $(LIBFTA) -o $(NAME)
-@echo "$(BLUE)        ||>>    $(BLUE)pipex compiled!!    <<||$(RESET)"
+	@echo "$(BLUE)        ||>>    $(BLUE)pipex compiled!!    <<||$(RESET)"
 
 clean:
 	@$(RM) $(OBJ)

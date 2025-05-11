@@ -6,7 +6,7 @@
 /*   By: roo <roo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 10:58:41 by rocfemia          #+#    #+#             */
-/*   Updated: 2025/04/27 15:21:50 by roo              ###   ########.fr       */
+/*   Updated: 2025/05/11 21:17:09 by roo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,10 @@ char				*ft_substr(const char *s, unsigned int start, size_t len);
 char				*ft_strjoin(const char *s1, const char *s2);
 char				*ft_strtrim(const char *s1, const char *set);
 char				**ft_split(const char *s, char c);
+int					ft_words_num(const char *s, char c);
+int					ft_lett_words(const char *s, char c, int k);
+void				ft_free_free(char **matrix);
+char				**ft_split2(const char *s, char c, char **matrix);
 char				*ft_itoa(int n);
 char				*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));

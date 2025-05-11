@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rocfemia <rocfemia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: roo <roo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:54:55 by roo               #+#    #+#             */
-/*   Updated: 2024/10/12 16:28:08 by rocfemia         ###   ########.fr       */
+/*   Updated: 2025/05/11 21:15:40 by roo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_words_num(const char *s, char c)
+int	ft_words_num(const char *s, char c)
 {
 	int	i;
 	int	j;
@@ -28,7 +28,7 @@ static int	ft_words_num(const char *s, char c)
 	return (j);
 }
 
-static int	ft_lett_words(const char *s, char c, int k)
+int	ft_lett_words(const char *s, char c, int k)
 {
 	int	lett_len;
 	int	i;
@@ -53,7 +53,7 @@ static int	ft_lett_words(const char *s, char c, int k)
 	return (0);
 }
 
-static void	ft_free_free(char **matrix)
+void	ft_free_free(char **matrix)
 {
 	int	i;
 
@@ -66,7 +66,7 @@ static void	ft_free_free(char **matrix)
 	free(matrix);
 }
 
-static char	**ft_split2(const char *s, char c, char **matrix)
+char	**ft_split2(const char *s, char c, char **matrix)
 {
 	int	i;
 	int	j;
