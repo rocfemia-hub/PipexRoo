@@ -6,7 +6,7 @@
 /*   By: roo <roo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 02:45:10 by roo               #+#    #+#             */
-/*   Updated: 2025/05/11 21:32:35 by roo              ###   ########.fr       */
+/*   Updated: 2025/05/12 04:51:30 by roo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char *get_path(char *cmd, char **envp)
 		free(result);
 		i++;
 	}
+	if(result == NULL)
+		return(ft_printf("Error de comando no encontrado"), result);
 	return(ft_free_free(paths), result);
 }
 
