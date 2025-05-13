@@ -10,7 +10,7 @@ CCFLAGS = -Wall -Wextra -Werror -g3
 
 SRC_DIR = src
 
-SRC = pipex.c\
+SRC = pipex.c pipex2.c\
 
 OBJ = $(SRC:.c=.o)
 
